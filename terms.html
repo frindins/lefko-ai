@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="logo.jpg">
 <title>Lefko AI — Terms of Service</title>
 <style>
   :root {
@@ -23,7 +24,7 @@
   }
   .wrap { max-width: 860px; margin: 0 auto; padding: 44px 0 0; }
   header { margin-bottom: 28px; }
-  .mark { width: 14px; height: 14px; background: var(--teal); border-radius: 3px; display: inline-block; margin-right: 10px; }
+  .logo { width: 30px; height: 30px; border-radius: 24%; display: inline-block; margin-right: 10px; vertical-align: middle; }
   h1 { font-size: 1.6rem; display: inline; letter-spacing: -0.01em; font-weight: 700; vertical-align: middle; }
   .meta { color: var(--dim); margin-top: 6px; font-size: 0.92rem; }
 
@@ -43,6 +44,11 @@
   section li { margin-bottom: 4px; }
   b { font-weight: 600; }
 
+  table.limits { width: 100%; border-collapse: collapse; margin: 10px 0 6px; font-size: 0.92rem; }
+  .limits th, .limits td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; background: var(--card); }
+  .limits th { font-weight: 600; }
+  .limits td:first-child { font-weight: 600; }
+
   footer {
     margin-top: 40px; background: #e6e8ea; border-top: 1px solid var(--line);
     padding: 18px 16px; text-align: center; color: var(--dim); font-size: 0.87rem;
@@ -56,21 +62,19 @@
 <div class="wrap">
 
   <header>
-    <!-- PLACEHOLDER: app name appears in the <title>, the h1 below, and the footer -->
-    <div><span class="mark"></span><h1>Lefko AI — Terms of Service</h1></div>
-    <!-- PLACEHOLDER: effective date -->
-    <p class="meta">Effective September 30, 2026 · Operated by Aaron (the "Operator")</p>
+    <div><img class="logo" src="logo.jpg" alt="Lefko AI logo" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2724%27 fill=%27%230e7d7d%27/%3E%3C/svg%3E';"><h1>Lefko AI — Terms of Service</h1></div>
+    <p class="meta">Effective September 30, 2026 · Operated by Aaron (the "Operator") · Florida, United States</p>
   </header>
 
   <div class="summary">
     <b>The short version:</b>
     <ul>
       <li>Accounts are <b>invite-only</b> and created by the Operator. One person per account, 18+.</li>
-      <li>Plans renew <b>monthly</b>; cancel anytime — the month you paid runs to its end.</li>
+      <li>Plans renew <b>monthly</b> — disclosed here and at checkout; cancel anytime online; the month you paid runs to its end.</li>
       <li><b>No refunds</b> — for plans or credits. Credits never expire and always stack.</li>
+      <li>Plan numbers are <b>ceilings ("up to")</b> sharing one daily budget; the app's meters always show what's left.</li>
       <li>Pay with the <b>same email you use to log in</b>, or nothing happens automatically.</li>
-      <li>No illegal content, no account sharing, no trying to bypass the limits.</li>
-      <li>The service is home-hosted and best-effort. AI output can be wrong — verify what matters.</li>
+      <li>No illegal content, no account sharing, no bypassing the limits. Home-hosted, best-effort.</li>
     </ul>
   </div>
 
@@ -95,8 +99,9 @@
     <h2>3. Subscriptions, billing, and refunds</h2>
     <div class="rule"></div>
     <ul>
-      <li>Paid plans are <b>monthly subscriptions</b> that renew automatically, billed through Lemon Squeezy (our merchant of record, which handles the checkout and taxes).</li>
-      <li>You can <b>cancel anytime</b> using the manage-subscription link in your receipt email. Cancelling stops future renewals; the month you've already paid keeps running to its end.</li>
+      <li>Paid plans are <b>monthly subscriptions</b> billed through Lemon Squeezy (our merchant of record, which handles the checkout and taxes).</li>
+      <li><b>Automatic renewal disclosure (Fla. Stat. § 501.165):</b> your plan renews automatically each month on your original purchase date, at the then-current price of your plan as shown at checkout, unless you cancel before renewal. The renewal terms are disclosed here, at checkout before purchase, and in every receipt email.</li>
+      <li>You can <b>cancel anytime, online</b>, using the manage-subscription link in your receipt email — the same online method you used to subscribe. Cancelling stops future renewals; the month you've already paid keeps running to its end.</li>
       <li><b>All payments are non-refundable</b> — including partial months, forgotten cancellations, and unused portions. If you don't want auto-renewal, cancel right after paying and you've bought a single month.</li>
       <li><b>Video credits</b> are one-time purchases: they never expire, they stack, and they have no cash value. Credits are non-transferable and non-refundable.</li>
       <li>Prices may change with reasonable notice given in the app; your next renewal reflects then-current prices.</li>
@@ -112,8 +117,16 @@
   <section>
     <h2>5. Usage limits and fair use</h2>
     <div class="rule"></div>
+    <p>Each plan includes the following daily allowances, reset at midnight (Eastern) and enforced automatically:</p>
+    <table class="limits">
+      <tr><th>Plan</th><th>Messages/day</th><th>Images/day</th><th>Studio video/day</th></tr>
+      <tr><td>Free</td><td>60</td><td>5 drafts</td><td>— (credits still work)</td></tr>
+      <tr><td>Basic</td><td>up to 300</td><td>up to 10</td><td>1 slot · 480p · 4s</td></tr>
+      <tr><td>Plus</td><td>up to 1,000</td><td>up to 12</td><td>1 slot · 480p · 4s</td></tr>
+      <tr><td>Creator</td><td>up to 2,000</td><td>up to 15</td><td>1 slot · 480p · 4s</td></tr>
+    </table>
     <ul>
-      <li>Each plan includes daily limits (messages, images, videos, and budgets) shown in the app and on the plans page. Limits reset at midnight (Eastern) and are enforced automatically.</li>
+      <li>These are <b>ceilings, not minimums</b>: messages, images, and video share one daily budget per plan, so heavy models and generation-heavy days reach the budget sooner. The app's live meters show your real remaining allowance at all times.</li>
       <li>Video credits bypass the daily generation caps, but the <b>hourly rate limit applies to everything</b>.</li>
       <li>Regenerating an image or video <b>creates a new generation and is billed again</b> — the app flags this before it happens.</li>
       <li>Limits exist to keep the service affordable for everyone; don't try to work around them.</li>
@@ -121,7 +134,13 @@
   </section>
 
   <section>
-    <h2>6. Acceptable use</h2>
+    <h2>6. Accurate expectations</h2>
+    <div class="rule"></div>
+    <p>Any plan numbers stated in the store, the app, the plans page, or advertising are <b>ceilings</b> under the budget rules in section 5 — they are "up to" amounts, not guarantees. The app's live meters are the authoritative, real-time statement of what you have left; where any stated number and the app disagree, the app governs. Florida's law against deceptive and unfair trade practices (Fla. Stat. § 501.204) makes misleading claims unlawful — this section is our commitment that nothing we publish oversells the service.</p>
+  </section>
+
+  <section>
+    <h2>7. Acceptable use</h2>
     <div class="rule"></div>
     <ul>
       <li><b>No illegal content</b> — none, including sexual content involving minors (which is reported to the relevant authorities and results in immediate, permanent termination), incitement, or material designed to harm.</li>
@@ -133,10 +152,11 @@
   </section>
 
   <section>
-    <h2>7. Privacy and your data</h2>
+    <h2>8. Privacy and your data</h2>
     <div class="rule"></div>
     <ul>
       <li>Your chats and uploads are stored on the Operator's own server, and the AI providers in use are configured for <b>zero data retention</b> (they don't train on or keep your conversations).</li>
+      <li>The Operator maintains <b>reasonable measures to secure the service</b> against unauthorized access, consistent with the Florida Information Protection Act (Fla. Stat. § 501.171). In the event of a security breach involving your personal information, affected Florida residents will be notified as and when that statute requires.</li>
       <li>You're responsible for what you type — don't paste other people's personal information, and treat anything sensitive accordingly. The Operator can't guarantee secrecy of content you choose to store.</li>
       <li>The Operator may view server logs for security, abuse response, and billing support.</li>
       <li>Ask and your account (and its stored chats) will be deleted.</li>
@@ -144,13 +164,13 @@
   </section>
 
   <section>
-    <h2>8. Availability</h2>
+    <h2>9. Availability</h2>
     <div class="rule"></div>
     <p>The service is home-hosted and provided on a best-effort basis: there's no uptime guarantee, and outages (planned or not) will happen. The Operator may pause the service briefly for maintenance or suspend access for non-payment or abuse. Extended downtime won't trigger refunds — see section 3.</p>
   </section>
 
   <section>
-    <h2>9. Ending your access</h2>
+    <h2>10. Ending your access</h2>
     <div class="rule"></div>
     <ul>
       <li><b>You</b> can stop anytime by cancelling (section 3) and asking for account deletion.</li>
@@ -160,35 +180,33 @@
   </section>
 
   <section>
-    <h2>10. AI output</h2>
+    <h2>11. AI output</h2>
     <div class="rule"></div>
     <p>AI models make mistakes. Verify anything important before relying on it — nothing generated here is professional advice (legal, medical, financial, or otherwise). Outputs follow the upstream providers' terms; if you want to use a generation commercially, check those terms first.</p>
   </section>
 
   <section>
-    <h2>11. Disclaimers and liability</h2>
+    <h2>12. Disclaimers and liability</h2>
     <div class="rule"></div>
     <p>The service is provided "as is" without warranties of any kind. To the maximum extent permitted by law, the Operator is not liable for indirect or consequential damages, and the Operator's total liability for anything is capped at the amount you paid in the current month.</p>
   </section>
 
   <section>
-    <h2>12. Changes to these terms</h2>
+    <h2>13. Changes to these terms</h2>
     <div class="rule"></div>
-    <p>These terms may change; material changes will be announced in the app before they take effect. Continuing to use the service after a change means you accept it.</p>
+    <p>These terms may change; material changes will be announced in the app before they take effect, and you may be asked to re-accept the terms in the app. Continuing to use the service after a change means you accept it.</p>
   </section>
 
   <section>
-    <h2>13. Governing law and contact</h2>
+    <h2>14. Governing law and contact</h2>
     <div class="rule"></div>
-    <!-- PLACEHOLDER: operator's state + contact email -->
-    <p>These terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-law rules. Questions, cancellations, and account requests: <a href="mailto:aaronmatthewl321@gmail.com">aaronmatthewl321@gmail.com</a>.</p>
+    <p>These terms are governed by the laws of the State of Florida, United States, without regard to conflict-of-law rules, and any dispute will be handled in the state or federal courts located in the Operator's Florida county. Lemon Squeezy, as merchant of record, calculates, collects, and remits applicable sales tax on purchases, including Florida tax where applicable. Questions, cancellations, and account requests: <a href="mailto:aaronmatthewl321@gmail.com">aaronmatthewl321@gmail.com</a>.</p>
   </section>
 
 </div>
 
 <footer>
   <div class="inner">
-    <!-- PLACEHOLDER: app name + contact email -->
     Lefko AI · hosted &amp; operated by Aaron · <a href="mailto:aaronmatthewl321@gmail.com">aaronmatthewl321@gmail.com</a> · <a href="index.html">Plans</a>
   </div>
 </footer>
